@@ -2,24 +2,46 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Web Developer Portfolio page made for FreeCodeCamp Front-End Development challenge">
     <meta name="keywords" content="portfolio web developer freecodecamp">
     <meta name="author" content="Felipe Marchi">
+    
     <title>Felipe Marchi | Portfolio Page</title>
-     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300" rel="stylesheet"> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300" rel="stylesheet"> 
+
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap core CSS-->
+    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="script.js"></script>
   </head>
 
   <body>
-  	
-		<div class="container">
-			<!-- Navigation Bar -->
 
+		<!-- Navigation Bar -->
+
+		<div class="container-fluid">
+			<div class="row">
+				<div id="nav-bar" class="col-xs-12">
+				
+					<nav class="navbar">
+						<a href="#" class="navbar-brand">FELIPE MARCHI</a>
+
+						<ul class="nav navbar-nav pull-right">
+							<li class="nav-item active"><a href="#about" class="nav-link">ABOUT</a></li>
+							<li class="nav-item"><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
+							<li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+						</ul>
+					</nav>
+
+
+				</div>
+			</div>
 	  	<!-- About Section -->
 
 	  	<!-- Portfolio Section -->
@@ -30,7 +52,39 @@
 
 		</div>
 
-
+ <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
 
+<!-- Navigation Tabs Example
+					<ul class="nav nav-tabs">
+						<li class="nav-item active">
+							<a href="#about-tab" class="nav-link" data-toggle="tab">ABOUT</a>
+						</li>
+						<li class="nav-item">
+							<a href="#portfolio-tab" class="nav-link" data-toggle="tab">PORTFOLIO</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact-tab" class="nav-link" data-toggle="tab">CONTACT</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div id="about-tab" class="tab-pane active" role="tabpanel">ABOUT</div>
+						<div id="portfolio-tab" class="tab-pane" role="tabpanel">PORTFOLIO</div>
+						<div id="contact-tab" class="tab-pane" role="tabpanel">CONTACT</div>
+						</div>
+					</div>
+ -->
