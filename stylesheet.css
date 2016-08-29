@@ -1,2 +1,25 @@
 /* Stylesheet for index.html */
 
+/*Colors
+
+Dark-blue: #141726;
+Blue: #333B5E;
+Light-blue: #7385A6;
+Grey: #5E5E5E;
+White: #E0E0E0;
+
+Reference: https://color.adobe.com/cloud/aHR0cHM6Ly9jYy1hcGktYXNzZXRzLmFkb2JlLmlv/library/1b17001c-9506-4de7-8830-d11dd0c4de74/theme/25623e3e-7ceb-41da-8957-00b9d1992e59/;
+*/
+
+/*Fonts
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+Reference: https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat:700|Roboto:300;
+*/
+
+body {
+	background-color: #E0E0E0;
+}
+
