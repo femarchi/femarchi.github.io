@@ -86,18 +86,29 @@ footer {
 		transition: 0.5s;
 	}
 
-	#nav-bar * {
+	#nav-bar a {
 		font-family: 'Montserrat', sans-serif;
 		color: #E0E0E0;
 	}
+	
+		#nav-bar-sections{
+			/*visibility: hidden;*/
+		}
 
-	#nav-button {
-		visibility: hidden;
-	}
+		#nav-button {
+			/*visibility: visible;*/
+			font-size: 30px;
+		}
 
-	#dropdown-menu {
-		background-color: #141726;
-	}
+		#dropdown-menu {
+			background-color: #141726;
+		}
+
+/*@media (min-width:768px){
+	#nav-button{display: none;}
+	#nav-bar-sections{visibility: visible;}
+
+}*/
 
 #page-wrap {
 	margin-top: 52px;
@@ -108,19 +119,35 @@ footer {
 		background-color: #333B5E;
 		font-family: 'Montserrat', sans-serif;
 	}
+		#profile-txt {
+			margin-top: 0px;
+			text-align: center;
+		}
 
-	#about #profile-img {
-		padding: 50px 0 50px 0;
-	}
+@media (min-width:768px){
+	#profile-txt{margin-top: 100px; text-align: right;}
+}
+
+		#profile-img {
+			padding: 50px 0 50px 0;
+		}
 
 		#profile-img img {
-			border: 3px solid white;
-			/*border-radius: 50%;*/
+			max-width: 250px;
+			height: auto;
+			border: 3px solid #E0E0E0;
+			border-radius: 50%;
 		}
 
 	#portfolio {
 		background-color: #5E5E5E;
+		padding-bottom: 15px;
 	}
+		
+		.project-img a img {
+			max-width: 300px;
+			height: auto;
+		}
 
 		.project-img, .project-description {
 			/*padding-top: 20px;
@@ -129,5 +156,20 @@ footer {
 
 	#contact {
 		background-color: #333B5E;
+		padding-bottom: 15px;
 	}
+
+		#social-links {
+			font-size: 32px;
+		}
+
+			#social-links a:link {color: #E0E0E0;}
+			#social-links a:visited {color: #E0E0E0;}
+			#social-links a:hover {color: #7385A6;}
+			#social-links a:active {color: #E0E0E0;}
+
+		#contact-form form {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
 
