@@ -12,13 +12,14 @@
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300" rel="stylesheet"> 
 		
-    <link href="https://rawgit.com/femarchi/femarchi.github.io/master/stylesheet.css" rel="stylesheet" type="text/css">
-
-    <!-- When working locally
-		<link href="stylesheet.css" rel="stylesheet" type="text/css"> -->
-
-    <!-- Bootstrap core CSS-->
+		    <!-- Bootstrap core CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Git css link -->
+		<!-- <link href="https://rawgit.com/femarchi/femarchi.github.io/master/stylesheet.css" rel="stylesheet" type="text/css"> -->
+
+    <!-- When working locally -->
+		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,8 +32,9 @@
 		<!-- Navigation Bar -->
 
 		<div class="container-fluid">
+
 			<div class="row">
-				<div id="nav-bar" class="col-xs-12">
+				<div id="nav-bar" class="navbar-fixed-top col-xs-12">
 				
 					<nav class="navbar">
 						<a href="#" class="navbar-brand">FELIPE MARCHI</a>
@@ -42,25 +44,88 @@
 							<li class="nav-item"><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
 							<li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
 						</ul>
+
+						<div id="nav-button" class="nav dropdown pull-right">
+							<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">&#9776;</button>
+							<ul id="dropdown-menu" class="dropdown-menu">
+								<li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+								<li class="nav-item"><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
+								<li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>						
+							</ul>
+					</div>
+
 					</nav>
-
-
 				</div>
 			</div>
+		</div>
+
+		<!-- Site Sections -->
+		<div id="page-wrap" class="container">
+				
 	  	<!-- About Section -->
+			<div id="about" class="row">
+				<div class="col-sm-6 col-xs-12">
+					<h1>Product Designer</br>
+					3d Artist</br>
+					Web Developer</h1>
+				</div>
+				<div id="profile-img" class="col-sm-6 col-xs-12  text-center">
+					<img src="#" alt="ProfileImg">
+				</div>
+			</div>
 
 	  	<!-- Portfolio Section -->
-
+			<div id="portfolio" class="row">
+				<div class="col-xs-12 text-center">
+					<h3>PORTFOLIO</h3>
+					<hr>
+				</div>
+				<div class="project-img col-xs-12 col-sm-6 text-center">
+					<img src="#" alt="ProjectImg">
+				</div>
+				<div class="project-description col-xs-12 col-sm-6">
+					<h5>PROJECT TITLE</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolor eaque vitae, saepe nesciunt et illo commodi voluptates libero fugiat odio. Animi obcaecati ea nam labore possimus, veniam quibusdam incidunt!</p>
+				</div>
+			</div>
 	  	<!-- Contact Section -->
-
+			<div id="contact" class="row">
+				<div class="col-xs-12 text-center">
+					<h3>CONTACT</h3>
+					<hr>
+				</div>
+				<div id="contact-text" class="col-xs-12 col-sm-6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolor eaque vitae, saepe nesciunt et illo commodi voluptates libero fugiat odio. Animi obcaecati ea nam labore possimus, veniam quibusdam incidunt!</p>
+					<div id="ext-links" class="col-xs-12">
+						<div class="row">
+							<a href="#">LKDIN</a>
+							<a href="#">GIT</a>
+							<a href="#">FB</a>
+							<a href="#">?</a>
+						</div>
+					</div>
+				</div>
+				
+				<div id="contact-form" class="col-xs-12 col-sm-6">
+					<form action="#" class="row">
+						<input class="col-xs-12" type="text" placeholder="Name">
+						<input class="col-xs-12" type="text" placeholder="E-mail">
+						<textarea class="col-xs-12" type="text" placeholder="Message" ></textarea>
+						<button class="col-xs-12 btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
 	  	<!-- Footer -->
+	  	<footer class="row text-center">
+	  		<p>Felipe Marchi, 2016</p>
+	  	</footer>
 
 		</div>
 
  <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
 

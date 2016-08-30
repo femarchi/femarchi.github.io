@@ -23,15 +23,111 @@ body {
 	background-color: #E0E0E0;
 }
 
+h1, h3 {
+	font-family: 'Montserrat', sans-serif;
+	/*border: 2px dashed gray;*/
+}
+
+hr {
+	margin-top: -0.3em;
+	width: 200px;
+	border: 2px solid #E0E0E0;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+div[class*="col-"] { /* Grid visualization helper */
+	/*border: 3px dashed lightgray;*/
+}
+
+textarea {
+	resize: vertical;
+}
+
+input, textarea{
+	padding-left: 0!important;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #5E5E5E;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #5E5E5E;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #5E5E5E;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #5E5E5E;
+  opacity: 1;
+}
+
+footer {
+	background-color: #141726; 
+}
+
 #nav-bar {
 	background-color: #141726;
+	height: 52px;
 }
 	#nav-bar nav {
 		max-width: 970px;
 		margin: 0 auto;
 	}
 
+	#nav-bar div {
+		background-color: #141726;
+	}
+	
+	li>.nav-link {
+		transition: 0.5s;
+	}
+
 	#nav-bar * {
 		font-family: 'Montserrat', sans-serif;
 		color: #E0E0E0;
 	}
+
+	#nav-button {
+		visibility: hidden;
+	}
+
+	#dropdown-menu {
+		background-color: #141726;
+	}
+
+#page-wrap {
+	margin-top: 52px;
+	color: #E0E0E0;
+}
+
+	#about {
+		background-color: #333B5E;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	#about #profile-img {
+		padding: 50px 0 50px 0;
+	}
+
+		#profile-img img {
+			border: 3px solid white;
+			/*border-radius: 50%;*/
+		}
+
+	#portfolio {
+		background-color: #5E5E5E;
+	}
+
+		.project-img, .project-description {
+			/*padding-top: 20px;
+			padding-bottom: 20px;*/
+		}
+
+	#contact {
+		background-color: #333B5E;
+	}
+
