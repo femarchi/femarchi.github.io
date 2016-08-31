@@ -1,4 +1,4 @@
-/* Main Stylesheet */
+ Main Stylesheet */
 
 /*---Overall Styling---*/
 
@@ -31,21 +31,22 @@ textarea {
 
 input, textarea{
 	padding-left: 0!important;
-	color: #5E5E5E;
+
+	color: #141726;
 }
 
 ::-webkit-input-placeholder { /* Chrome */
-  color: #3F3F3F;
+  color: #5E5E5E;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: #3F3F3F;
+  color: #5E5E5E;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: #3F3F3F;
+  color: #5E5E5E;
   opacity: 1;
 }
 :-moz-placeholder { /* Firefox 4 - 18 */
-  color: #3F3F3F;
+  color: #5E5E5E;
   opacity: 1;
 }
 
@@ -173,6 +174,7 @@ input, textarea{
 
 		#contact-text {
 			text-align: center;	
+			padding: 0 50px 0 50px;
 		}
 
 		@media (min-width:768px){
@@ -181,6 +183,8 @@ input, textarea{
 
 		#social-links {
 			font-size: 32px;
+			padding-top: 15px;
+			padding-bottom: 15px;
 		}
 
 			#social-links a:link {color: #E0E0E0;}
@@ -199,11 +203,39 @@ input, textarea{
 		#contact form>*{
 			margin-bottom: 3px;
 		}
+		
+		/* Css btn style override*/
+
+		.btn {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+		}
+
+		.btn-primary, .btn-primary:visited, .btn-primary:focus {
+		    background: transparent;
+		    color: #E0E0E0;
+		    border-color: #E0E0E0;
+		    border-width: 2px;
+		}
+		 
+		.btn-primary:hover {
+		    background: #7385A6;
+		    border-color: #E0E0E0;
+		    border-width: 2px;
+		}
+		 
+		.btn-primary:active, .btn-primary.active {
+		    background: transparent!important;
+		    border-color: #E0E0E0!important;
+		    border-width: 2px!important;
+		}
+
 
 /*---Footer---*/
 
 	footer {
-		padding-top: 3px;
+		padding-top: 15px;
 		background-color: #141726;
 		z-index: 1;
 	}
@@ -225,4 +257,3 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 
 Reference: https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat:700|Roboto:300;
-*/
