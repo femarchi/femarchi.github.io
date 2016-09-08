@@ -2,6 +2,10 @@
 
 /*---Overall Styling---*/
 
+html, body{
+	height: 100%;
+}
+
 body {
 	background: #E0E0E0;
 }
@@ -49,6 +53,32 @@ input, textarea{
   color: #5E5E5E;
   opacity: 1;
 }
+
+/*---Language Page---*/
+
+#lang-page {
+	height: 220px;
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -110px;
+	margin-left: -150px;
+	background-color: #141726;
+	color: #E0E0E0;
+	box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.5);
+}
+
+	#lang-menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	#lang-menu ul a {
+		width: 70%;
+		margin: 2px 0 2px 0;
+	}
 
 /*---Navigation bar---*/
 
@@ -204,7 +234,7 @@ input, textarea{
 			margin-bottom: 3px;
 		}
 		
-		/* Css btn style override*/
+		/* css btn style override*/
 
 		.btn {
     font-weight: 700;
@@ -239,6 +269,23 @@ input, textarea{
 		background-color: #141726;
 		z-index: 1;
 	}
+
+		#lang-chooser ul {
+			padding: 0;
+		}
+
+		#lang-chooser ul li{
+			list-style-type: none;
+			display: inline;
+			padding: 0 10px 0 10px;
+		}
+		
+		#lang-chooser a {
+			text-decoration: none;
+			color: #E0E0E0;
+		}
+
+		#lang-chooser a:hover {color: #7385A6;}
 
 /*Colors Used
 
