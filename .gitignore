@@ -3,3 +3,8 @@
 *.sublime-project
 *.sublime-workspace
 bootstrap.*
+
+# Folders
+refs/
+imgs/old/
+

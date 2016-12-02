@@ -33,9 +33,11 @@ textarea {
 	resize: vertical;
 }
 
-input, textarea{
-	padding-left: 0!important;
-
+input, textarea {
+	/*padding-left: 2px!important;*/
+	border: 2px inset #5E5E5E;
+	border-radius: 5px;
+	background-color: #E0E0E0;
 	color: #141726;
 }
 
@@ -52,6 +54,20 @@ input, textarea{
 :-moz-placeholder { /* Firefox 4 - 18 */
   color: #5E5E5E;
   opacity: 1;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+.simple-link {
+	text-decoration: none;
+	color: #E0E0E0;
+}
+
+.simple-link:hover {
+	text-decoration: none;
+	color: #7385A6;
 }
 
 /*---Language Page---*/
@@ -106,6 +122,11 @@ input, textarea{
 		font-family: 'Montserrat', sans-serif;
 		color: #E0E0E0;
 	}
+
+	#nav-bar p {
+		font-family: 'Montserrat', sans-serif;
+		color: #E0E0E0;
+	}
 	
 			#nav-bar-sections li a:hover {
 				color: #141726;
@@ -145,12 +166,16 @@ input, textarea{
 		z-index: 4;
 	}
 		#profile-txt {
-			margin-top: 0px;
+			margin-top: 10px;
 			text-align: center;
 		}
 
 		@media (min-width:768px){
-			#profile-txt{margin-top: 100px; text-align: right;}
+			#profile-txt{
+				margin-top: 30px;
+				margin-bottom: 30px;
+				padding-left: 50px;
+				text-align: left}
 		}
 
 		#profile-img {
@@ -190,8 +215,9 @@ input, textarea{
 			}
 
 			.project-img a img {
-				max-width: 90%;
+				max-width: 80%;
 				height: auto;
+				box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
 			}
 
 /*---Contact Section---*/
@@ -231,7 +257,8 @@ input, textarea{
 		}
 
 		#contact form>*{
-			margin-bottom: 3px;
+			padding: 4px;
+			margin-bottom: 4px;
 		}
 		
 		/* css btn style override*/
@@ -280,12 +307,6 @@ input, textarea{
 			padding: 0 10px 0 10px;
 		}
 		
-		#lang-chooser a {
-			text-decoration: none;
-			color: #E0E0E0;
-		}
-
-		#lang-chooser a:hover {color: #7385A6;}
 
 /*Colors Used
 

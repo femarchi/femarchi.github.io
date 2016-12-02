@@ -4,15 +4,21 @@ $(document).ready(function() {
 
 	var navHeight = document.getElementById('nav-bar').offsetHeight;
 	
-	$(".about-btn").click(function() {
+	$(".navbar-brand").click(function() {
 	    $("html, body").animate({
 	        scrollTop: $("#about").offset().top-navHeight},
 	        'slow');
 	});
 
-	$(".portfolio-btn").click(function() {
+	$(".portfolio-web-btn").click(function() {
 	    $("html, body").animate({
-	        scrollTop: $("#portfolio").offset().top-navHeight},
+	        scrollTop: $("#portfolio-web").offset().top-navHeight},
+	        'slow');
+	});
+
+	$(".portfolio-3d-btn").click(function() {
+	    $("html, body").animate({
+	        scrollTop: $("#portfolio-3d").offset().top-navHeight},
 	        'slow');
 	});
 
@@ -23,7 +29,7 @@ $(document).ready(function() {
 	});
 
 	$("#form-submit-btn").click(function() {
-		alert("This form is not working due to the lack of a hosting server. Please send an email to fepmarchi@gmail.com. Thank You.");
+		alert("Obrigado!");
 	});
 });
 
