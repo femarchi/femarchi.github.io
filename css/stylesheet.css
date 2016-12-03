@@ -214,10 +214,21 @@ input, textarea {
 				}
 			}
 
-			.project-img a img {
-				max-width: 80%;
-				height: auto;
+			.project-img-wrap{
+				overflow: hidden;
+				height: 250px;
 				box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
+			}
+
+			.project-img a img {
+				width: 150%;
+				height: auto;
+				margin-left: -25%;
+			}
+
+			.center-focus{ 
+				/*Specific to images that are better vertically centered*/
+				margin-top:-25%;
 			}
 
 /*---Contact Section---*/

@@ -29,6 +29,11 @@ $(document).ready(function() {
 	});
 
 	$("#form-submit-btn").click(function() {
+		$('#form').attr('action',
+                       'mailto:fepmarchi@gmail.com?subject=' +
+                       $('#form-subject').val() + '&body=' +
+                       $('#form-message').val() + '\n' + $('#form-name'));
+        $('#form').submit();
 		alert("Obrigado!");
 	});
 });
