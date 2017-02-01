@@ -15,7 +15,7 @@
     <title>Felipe Marchi | Página Portfolio</title>
   
 <!-- LINKS   -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300" rel="stylesheet"> 
 	
 		<!-- Bootstrap core CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -45,208 +45,128 @@
 
   <body>
 
-<!-- NAVIGATION BAR -->
+
 
 		<div class="container-fluid">
 
-			<div class="row">
-				<div id="nav-bar" class="navbar-fixed-top col-xs-12">
-				
-					<nav class="navbar">
-						<a href="#about"><p class="navbar-brand">FELIPE MARCHI</p></a>
+<!-- NAVIGATION BAR -->
 
-						<ul id="nav-bar-sections" class="nav navbar-nav pull-right hidden-xs">
+			<div id="nav-bar" class="navbar-fixed-top row">
+			
+				<nav class="navbar">
+					<p class="navbar-brand">FELIPE MARCHI</p>
 
-							<!-- <li class="about-btn nav-item active"><a href="#about" class="nav-link">SOBRE</a></li> -->
+					<ul id="nav-bar-sections" class="nav navbar-nav pull-right hidden-xs">
 
-							<li class="portfolio-web-btn nav-item"><a href="#portfolio" class="nav-link">WEB</a></li>
+						<li class="portfolio-web-btn nav-item"><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
 
-							<li class="portfolio-3d-btn nav-item"><a href="#portfolio" class="nav-link">3D</a></li>
+						<li class="portfolio-3d-btn nav-item"><a href="#portfolio" class="nav-link">SOBRE</a></li>
 
-							<li class="contact-btn nav-item"><a href="#contact" class="nav-link">CONTATO</a></li>
+						<li class="contact-btn nav-item"><a href="#contact" class="nav-link">CONTATO</a></li>
+
+					</ul>
+
+<!-- DROPDOWN -->
+
+					<div id="nav-button" class="nav dropdown pull-right text-center hidden-lg visible-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+
+						<ul id="dropdown-menu" class="dropdown-menu">
+							<li class="portfolio-web-btn nav-item"><a href="#portfolio-web" class="nav-link">PORTFOLIO</a></li>
+
+							<li class="portfolio-3d-btn nav-item"><a href="#portfolio-3d" class="nav-link">SOBRE</a></li>
+
+							<li class="contact-btn nav-item"><a href="#contact" class="nav-link">CONTATO</a></li>			
 						</ul>
-
-	<!-- DROPDOWN -->
-
-						<div id="nav-button" class="nav dropdown pull-right text-center hidden-lg visible-xs">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars" aria-hidden="true"></i></a>
-
-							<ul id="dropdown-menu" class="dropdown-menu">
-								<li class="portfolio-web-btn nav-item"><a href="#portfolio-web" class="nav-link">WEB</a></li>
-
-								<li class="portfolio-3d-btn nav-item"><a href="#portfolio-3d" class="nav-link">3D</a></li>
-
-								<li class="contact-btn nav-item"><a href="#contact" class="nav-link">CONTATO</a></li>			
-							</ul>
 
 					</div>
 
-					</nav>
-				</div>
+				</nav>
+
 			</div>
-		</div>
-
-<!-- PAGE CONTAINER -->
-
-		<div id="page-wrap" class="container">
-				
-<!-- ABOUT -->
-
-			<div id="about" class="row">
-				<div id="profile-txt" class="col-sm-7 col-xs-12">
-					<!-- <h3>SOBRE</h3> -->
-					<!-- <hr> -->
-					<h5 class="bold-text">Olá!</h5>
-					<p class="bold-text">					
-						Sou Designer de Produto formado pela <a class="simple-link" href="http://portal.mackenzie.br/">Universidade Presbiteriana Mackenzie</a> e trabalhei durante cerca de 7 anos na produção de imagens em 3d para projetos arquitetônicos, cenográficos e de produto.<br><br>
-						Já passei por muitas experiências na vida: morei nos EUA, na Itália, pratiquei ginástica olímpica, voleibol, toquei guitarra e cantei em 3 bandas de rock, fiz curso de permacultura, voluntariado em 3 fazendas, estudei programação em Java e agora estou aprendendo a desenvolver conteúdo para a web!
-						<br><br>
-						Bem vindo ao meu portfolio.
-					</p>
-					<br>
-					<button id="cv-btn" type="submit" class="btn btn-primary text-center">CV</button>
-				</div>
-				<div id="profile-img" class="col-sm-5 col-xs-12  text-center">
-					<img src="../imgs/profile-img-01.jpg" alt="ProfileImg">
-				</div>
-			</div>
+				<!-- End of #nav-bar -->
 
 <!-- PORTFOLIO -->
 
 			<div id="portfolio" class="row">
 
-	<!-- WEB -->
-				<div id="portfolio-web" class="col-xs-12 text-center">
-					<h3>WEB</h3>
-					<hr>
-				</div>
-				<div class="col-xs-12">
-					<div class="project-wrap row">
-						<div class="project-img col-xs-12 col-sm-6 text-center">
-							<div class="project-img-wrap">
-								<a href="http://codepen.io/femarchi/full/OXaZpq/"><img src="../imgs/web/camel-tribute-page.jpg" alt="ProjectImg"></a>
-							</div>
-						</div>
-						<div class="project-description col-xs-12 col-sm-6">
-							<h5>PÁGINA TRIBUTO À BANDA CAMEL</h5>
+				<div class="project-img col-xs-12 col-sm-6 col-md-3 text-center">
+					<div class="project-img-wrap">
+						<img src="../imgs/web/camel-tribute-page.jpg" alt="ProjectImg">
+					</div>
+					<a href="http://codepen.io/femarchi/full/OXaZpq/">
+						<div class="project-description">
+							<h5>PÁGINA TRIBUTO</h5>
 							<p>
 							Página criada para o curso de Desenvolvedor Front-End da página FreeCodeCamp.</p>
-						</div>
-					</div>
+						</div>					
+					</a>
+				</div>
 
-					<div class="project-wrap row">
-						<div class="project-img col-xs-12 col-sm-6 text-center">
-							<div class="project-img-wrap">
-								<a href="https://codepen.io/femarchi/full/QKVgqV/"><img src="../imgs/web/random-quote-page.jpg" alt="ProjectImg" class="center-focus"></a>
-							</div>
-						</div>
-						<div class="project-description col-xs-12 col-sm-6">
+				<div class="project-img col-xs-12 col-sm-6 col-md-3 text-center">
+					<div class="project-img-wrap">
+						<img src="../imgs/web/random-quote-page.jpg" alt="ProjectImg" class="center-focus">
+					</div>
+					<a href="https://codepen.io/femarchi/full/QKVgqV/">
+						<div class="project-description">
 							<h5>GERADOR DE CITAÇÕES</h5>
 							<p>Página criada para o curso de Desenvolvedor Front-End da página FreeCodeCamp.</p>
 						</div>
-					</div>
+					</a>
+				</div>
 
-					<div class="project-wrap row">
-						<div class="project-img col-xs-12 col-sm-6 text-center">
-							<div class="project-img-wrap">
-								<a href="https://codepen.io/femarchi/full/jrdRJv/"><img src="../imgs/web/simple-weather-page.jpg" alt="ProjectImg"></a>
-							</div>
-						</div>
-						<div class="project-description col-xs-12 col-sm-6">
+				<div class="project-img col-xs-12 col-sm-6 col-md-3 text-center">
+					<div class="project-img-wrap">
+						<img src="../imgs/web/simple-weather-page.jpg" alt="ProjectImg">
+					</div>
+					<a href="https://codepen.io/femarchi/full/jrdRJv/">
+						<div class="project-description">
 							<h5>APLICATIVO SIMPLES DE CLIMA E TEMPO</h5>
 							<p>Página criada para o curso de Desenvolvedor Front-End da página FreeCodeCamp.</p>
 						</div>
+					</a>
+				</div>
+
+				<div class="project-img col-xs-12 col-sm-6 col-md-3 text-center">
+					<div class="project-img-wrap">
+						<img src="../imgs/3d/Banco_Auto/03.jpg" alt="ProjectImg" class="center-focus">
 					</div>
-				</div>
-
-	<!-- 3D -->
-				<div id="portfolio-3d" class="col-xs-12 text-center">
-					<h3>3D</h3>
-					<hr>
-				</div>
-
-				<div class="col-xs-12">
-					<div class="project-wrap row">
-						<div class="project-img col-xs-12 col-sm-6 text-center">
-							<div class="project-img-wrap">
-								<a href="#"><img src="../imgs/3d/Banco_Auto/01.jpg" alt="ProjectImg" class="center-focus"></a>
-							</div>
-						</div>
-						<div class="project-description col-xs-12 col-sm-6">
+					<a href="#">
+						<div class="project-description">
 							<h5>BANCO AUTOMOTIVO</h5>
-							<p>Modelagem e renderização.</p>
+							<p>Modelagem, texturização e render.</p>
 							<br>
-							<!-- <p>Cliente: Paula Fujii</p> -->
 						</div>
+					</a>
+				</div>
+
+				<div class="project-img col-xs-12 col-sm-6 col-md-3 text-center">
+					<div class="project-img-wrap">
+						<img src="../imgs/3d/Patio_Gale/PatioGale03.jpg" alt="ProjectImg">
 					</div>
-
-					<div class="project-wrap row">
-							<div class="project-img col-xs-12 col-sm-6 text-center">
-								<div class="project-img-wrap">
-									<a href="#"><img src="../imgs/3d/Patio_Gale/PatioGale03.jpg" alt="ProjectImg"></a>
-								</div>
-							</div>
-							<div class="project-description col-xs-12 col-sm-6">
-								<h5>PÁTIO GALÉ - PORTUGAL</h5>
-								<p>Modelagem para representação de projeto cenográfico.</p>
-								<br>
-								<!-- <p>Cliente: Mima Cenografia</p> -->
-							</div>
-					</div> 
-					
-
-					<!-- New Project Template
-
-					<div class="project-wrap row">
-						<div class="project-img col-xs-12 col-sm-6 text-center">
-							<div class="project-img-wrap">
-								<a href="#"><img src="#" alt="ProjectImg"></a>
-							</div>
+					<a href="#">
+						<div class="project-description">
+							<h5>PÁTIO GALÉ - PORTUGAL</h5>
+							<p>Modelagem e texturização para representação de projeto cenográfico.</p>
+							<br>
 						</div>
-						<div class="project-description col-xs-12 col-sm-6">
-							<h5>PROJECT 2</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nobis, magni modi? Labore fugit ab tempora voluptatum eveniet nesciunt, praesentium!</p>
-						</div>
-					</div> 
-
-					-->
-
+					</a>
 				</div>
-				
-			</div>
-		
-<!-- CONTACT -->
 
-			<div id="contact" class="row">
-				<div class="col-xs-12 text-center">
-					<h3>CONTATO</h3>
-					<hr>
-				</div>
-				<div id="contact-text" class="col-xs-12 col-sm-6">
-					<p class="bold-text">
-					Se gostou do que viu, mande um email através do formulário ou me contate através de um dos sites abaixo. <br><br>
-					Obrigado!
-					</p>
-					<div class="col-xs-12">
-						<div id="social-links" class="row text-center">
-							<a href="https://www.facebook.com/felipe.marchi.391"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-							<a href="https://www.linkedin.com/in/femarchi"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-							<a href="https://github.com/femarchi"><i class="fa fa-github" aria-hidden="true"></i></a>
-							<!-- <a href="http://marchifelipe.wixsite.com/portfolio"><i class="fa fa-cube" aria-hidden="true"></i></a> -->
-						</div>
+				<div class="project-img col-xs-12 col-sm-6 col-md-3 text-center">
+					<div class="project-img-wrap">
+						<img src="../imgs/3d/Centopeia/Centopeia02a.jpg" alt="ProjectImg" class="center-focus">
 					</div>
-				</div>
-				
-				<div id="contact-form" class="col-xs-12 col-sm-6">
-					<form id="form" class="row">
-						<input id="form-name" class="col-xs-12" type="text" placeholder="Nome">
-						<input id="form-subject" class="col-xs-12" type="text" placeholder="Assunto">
-						<textarea rows="4" id="form-msg" class="col-xs-12" type="text" placeholder="Mensagem"></textarea>
-						<button id="form-submit-btn" type="submit" class="col-xs-offset-4 col-xs-4 btn btn-primary text-center">Enviar</button>
-					</form>
+					<a href="#">
+						<div class="project-description">
+							<h5>CENTOPÉIA DE BRINQUEDO</h5>
+							<p>Modelagem e renderização de produto promocional.</p>
+						</div>
+					</a>
 				</div>
 
 			</div>
+			<!-- End of #portfolio -->
 
 <!-- FOOTER -->
 
@@ -262,6 +182,7 @@
 	  	</footer>
 
 		</div>
+		<!-- End of #page-wrap -->
 
   </body>
 </html>

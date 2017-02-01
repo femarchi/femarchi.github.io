@@ -3,12 +3,6 @@ $(document).ready(function() {
 // Smooth Scrolling
 
 	var navHeight = document.getElementById('nav-bar').offsetHeight;
-	
-	$(".navbar-brand").click(function() {
-	    $("html, body").animate({
-	        scrollTop: $("#about").offset().top-navHeight},
-	        'slow');
-	});
 
 	$(".portfolio-web-btn").click(function() {
 	    $("html, body").animate({
