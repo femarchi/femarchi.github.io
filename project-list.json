@@ -1,0 +1,76 @@
+{
+	"projects":[
+		{
+		"id":1,
+		"image":"../imgs/web/camel-tribute-page.jpg",
+		"centerfocus":false,
+		"title":"PÁGINA TRIBUTO",
+		"description":"Página criada para o curso de Desenvolvedor Front-End da página FreeCodeCamp.",
+		"category":"web",
+		"link":"http://codepen.io/femarchi/full/OXaZpq/"		
+		},
+		{
+		"id":2,
+		"image":"../imgs/web/random-quote-page.jpg",
+		"centerfocus":true,
+		"title":"GERADOR DE CITAÇÕES",
+		"description":"Página criada para o curso de Desenvolvedor Front-End da página FreeCodeCamp.",
+		"category":"web",
+		"link":"https://codepen.io/femarchi/full/QKVgqV/"		
+		},
+		{
+		"id":3,
+		"image":"../imgs/web/simple-weather-page.jpg",
+		"centerfocus":false,
+		"title":"APLICATIVO SIMPLES DE CLIMA E TEMPO",
+		"description":"Página criada para o curso de Desenvolvedor Front-End da página FreeCodeCamp.",
+		"category":"web",
+		"link":"https://codepen.io/femarchi/full/jrdRJv/"		
+		},
+		{
+		"id":4,
+		"image":"../imgs/3d/Banco_Auto/03.jpg",
+		"centerfocus":true,
+		"title":"BANCO AUTOMOTIVO",
+		"description":"Modelagem, texturização e render.",
+		"category":"3d",
+		"link":"#"		
+		},
+		{
+		"id":5,
+		"image":"../imgs/3d/Patio_Gale/PatioGale03.jpg",
+		"centerfocus":false,
+		"title":"PÁTIO GALÉ - PORTUGAL",
+		"description":"Modelagem e texturização para representação de projeto cenográfico.",
+		"category":"3d",
+		"link":"#"		
+		},
+		{
+		"id":6,
+		"image":"../imgs/3d/Centopeia/Centopeia02a.jpg",
+		"centerfocus":true,
+		"title":"CENTOPÉIA DE BRINQUEDO",
+		"description":"Modelagem e renderização de produto promocional.",
+		"category":"3d",
+		"link":"#"		
+		},
+		{
+		"id":7,
+		"image":"../imgs/design/TCC/SS05.jpg",
+		"centerfocus":true,
+		"title":"SECADOR SOLAR",
+		"description":"Projeto de conclusão de curso para a obtenção do grau de Designer de Produto.",
+		"category":"Product Design",
+		"link":"#"		
+		},
+		{
+		"id":8,
+		"image":"../imgs/3d/Azeite_Andorinha/Andorinha02.jpg",
+		"centerfocus":true,
+		"title":"AZEITE ANDORINHA",
+		"description":"Representação 3d de embalagem para lançamento do produto.",
+		"category":"3d",
+		"link":"#"		
+		}
+	]
+}
