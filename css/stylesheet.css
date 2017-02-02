@@ -3,6 +3,7 @@
 /*---Overall Styling---*/
 
 html, body{
+	min-height: 100%;
 	height: 100%;
 }
 
@@ -10,7 +11,7 @@ body {
 	background: #E0E0E0;
 }
 
-h1, h3 {
+h1, h3, h5 {
 	font-family: 'Montserrat', sans-serif;
 	/*border: 2px dashed gray;*/
 }
@@ -68,6 +69,10 @@ input, textarea {
 .simple-link:hover {
 	text-decoration: none;
 	color: #7385A6;
+}
+
+.container-fluid{
+	height: 100%;
 }
 
 /*---Language Page---*/
@@ -154,12 +159,15 @@ input, textarea {
 /*---Portfolio Section---*/
 
 	#portfolio {
-		margin-top: 52px;
+
+		min-height: 100%;
+
+		padding-top: 52px;
+
 		color: #E0E0E0;
 		box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.5);
 
 		background-color: #5E5E5E;
-		padding-bottom: 15px;
 		z-index: 3;
 	}
 
@@ -186,8 +194,13 @@ input, textarea {
 			opacity: 1;
 		}
 
-		.project-img-wrap{
+			.project-description>hr{
+				margin-top: 2px;
+				width: 100px;
+				margin-left: 0;
+			}
 
+		.project-img-wrap{
 			overflow: hidden;
 			height: 350px;
 		}
@@ -216,7 +229,7 @@ input, textarea {
 
 			.center-focus{ 
 				/*Specific to images that are better vertically centered*/
-				margin-top:-25%;
+				margin-top:-30%;
 			}
 
 /*---About Section---*/
@@ -323,11 +336,24 @@ input, textarea {
 /*---Footer---*/
 
 	footer {
+
+		margin-bottom: 0;
 		padding-top: 15px;
+
 		background-color: #141726;
 		z-index: 1;
 		color: #E0E0E0;
 	}
+
+		footer h3{
+			font-size: 18px;
+			letter-spacing: 5px;
+			font-weight: bold;
+		}
+
+		footer p{
+			letter-spacing: 3px;
+		}
 
 		#lang-chooser ul {
 			padding: 0;

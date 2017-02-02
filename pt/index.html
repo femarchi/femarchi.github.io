@@ -32,6 +32,9 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+		
+		<!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
@@ -88,15 +91,33 @@
 
 <!-- PORTFOLIO -->
 
-			<div id="portfolio" class="row">
+			<template id="project-template">
 
 				<div class="project-img col-xs-12 col-sm-6 col-md-3 text-center">
+					<div class="project-img-wrap">
+						<img src="" alt="ProjectImg">
+					</div>
+					<a href="#">
+						<div class="project-description">
+							<h5></h5>
+							<hr>
+							<p></p>
+						</div>					
+					</a>
+				</div>
+
+			</template>
+
+			<div id="portfolio" class="row">
+
+				<!-- <div class="project-img col-xs-12 col-sm-6 col-md-3 text-center">
 					<div class="project-img-wrap">
 						<img src="../imgs/web/camel-tribute-page.jpg" alt="ProjectImg">
 					</div>
 					<a href="http://codepen.io/femarchi/full/OXaZpq/">
 						<div class="project-description">
 							<h5>PÁGINA TRIBUTO</h5>
+							<hr>
 							<p>
 							Página criada para o curso de Desenvolvedor Front-End da página FreeCodeCamp.</p>
 						</div>					
@@ -163,7 +184,7 @@
 							<p>Modelagem e renderização de produto promocional.</p>
 						</div>
 					</a>
-				</div>
+				</div> -->
 
 			</div>
 			<!-- End of #portfolio -->
@@ -171,6 +192,19 @@
 <!-- FOOTER -->
 
 	  	<footer class="row text-center">
+
+			
+	  				<h3>FELIPE MARCHI</h3>
+	  				<hr>	
+
+  					<p>DESIGN DE PRODUTO • REPRESENTAÇÕES 3D • DESENVOLVIMENTO FRONT-END</p>			
+
+		  	<div id="social-links" class="col-xs-12">
+					<a href="https://www.facebook.com/felipe.marchi.391"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a href="https://www.linkedin.com/in/femarchi"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					<a href="https://github.com/femarchi"><i class="fa fa-github" aria-hidden="true"></i></a>
+				</div>
+
 	  		<!-- <div id="lang-chooser" class="col-xs-6 col-xs-offset-3">
 	  			<ul>
 		  			<li><a class="simple-link" href="../en/index.html">EN</a></li>
