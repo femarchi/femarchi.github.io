@@ -4,8 +4,8 @@
 		"id":1,
 		"image":"../imgs/web/camel-tribute-page.jpg",
 		"centerfocus":false,
-		"title":"PÁGINA TRIBUTO",
-		"description":"Página criada para o curso de Desenvolvedor Front-End da página FreeCodeCamp.",
+		"title":"CAMEL",
+		"description":"Primeiro desafio do curso Desenvolvedor Front-End do freecodecamp.com: um tributo à banda Camel.",
 		"category":"web",
 		"link":"http://codepen.io/femarchi/full/OXaZpq/"		
 		},
@@ -71,6 +71,43 @@
 		"description":"Representação 3d de embalagem para lançamento do produto.",
 		"category":"3d",
 		"link":"#"		
+		},
+		{
+		"id":9,
+		"image":"../imgs/3d/Predio/PredioRendr.jpg",
+		"centerfocus":true,
+		"title":"PRÉDIO RESIDENCIAL",
+		"description":"Representação 3d e planta ilustrada para apresentação de projeto.",
+		"category":"3d",
+		"link":"#"		
+		},
+		{
+		"id":10,
+		"image":"../imgs/3d/Roda_Gigante/03.jpg",
+		"centerfocus":true,
+		"title":"RODA GIGANTE",
+		"description":"Modelagem para uso em projeto de cenografia.",
+		"category":"3d",
+		"link":"#"		
+		},
+		{
+		"id":11,
+		"image":"../imgs/3d/Sala_Comercial/SalaComercial03.jpg",
+		"centerfocus":true,
+		"title":"SALA COMERCIAL",
+		"description":"Representação em 3d de projeto arquitetônico.",
+		"category":"3d",
+		"link":"#"		
+		},
+		{
+		"id":12,
+		"image":"../imgs/3d/Stand_Iveco/StandIveco05.jpg",
+		"centerfocus":true,
+		"title":"STAND IVECO",
+		"description":"Representação em 3d de projeto cenográfico.",
+		"category":"3d",
+		"link":"#"		
 		}
+
 	]
 }
