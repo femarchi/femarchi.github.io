@@ -14,8 +14,8 @@ h1, h3, h5 {
 }
 
 hr {
-	margin-top: -0.3em;
-	width: 200px;
+	margin-top: 0;
+	width: 132px;
 	border: 2px solid #feffff;
 }
 
@@ -105,8 +105,8 @@ input, textarea {
 	color: #feffff;
 	height: 60px;
 	z-index: 5;
-	padding-left: 24px;
-	padding-right: 24px;
+	padding-left: 8px;
+	padding-right: 8px;
 	padding-top: 5px;
 	margin: 0 auto;
 }
@@ -179,8 +179,8 @@ input, textarea {
 			opacity: 0;
 			transition: 0.2s;
 			
-			background-color: rgba(230, 39, 57, 0.95);
-			/*background-color: rgba(224,89,21,0.95);*/
+			/*background-color: rgba(230, 39, 57, 0.95);*/
+			background-color: rgba(0,0,0,0.9);
 			color: #feffff;
 		}
 
@@ -229,6 +229,10 @@ input, textarea {
 				/*Specific to images that are better vertically centered*/
 				margin-top: -12%;
 			}
+
+/*---Project Page---*/
+
+
 
 /*---About Section---*/
 

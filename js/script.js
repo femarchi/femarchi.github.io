@@ -1,30 +1,30 @@
-
-
 $(document).ready(function() {
 
-//populate portfolio
-	getJsonArray();
+	//populate portfolio
+	var jsonArray = getJsonArray();
+
+	window.onpopstate = function(e){
+    if(e.state){
+      document.getElementById("portfolio").innerHTML = e.state;
+    }
+	};
 
 	function getJsonArray(){
 
 		var arr = [];
 
     $.getJSON('../project-list.json',function(data){
-        console.log('success');
-        $.each(data.projects,function(i, project){
-
-          arr.push(project);
-
-        });
-        arr = shuffle(arr);
-        populate(arr);
+        //console.log('success');
+        $.each(data.projects,function(i, project){arr.push(project);});
+  			populate(shuffle(arr));
     });
-
+    return arr;
 	}
 
 	function shuffle(array){
 
-		var currentIndex = array.length
+		var arrayClone = JSON.parse(JSON.stringify(array));
+		var currentIndex = arrayClone.length
 		var randomIndex;
 
 	  // While there remain elements to shuffle...
@@ -35,12 +35,12 @@ $(document).ready(function() {
 	    currentIndex -= 1;
 
 	    // And swap it with the current element.
-	    var temp = array[currentIndex];
-	    array[currentIndex] = array[randomIndex];
-	    array[randomIndex] = temp;
+	    var temp = arrayClone[currentIndex];
+	    arrayClone[currentIndex] = arrayClone[randomIndex];
+	    arrayClone[randomIndex] = temp;
 	  }
 
-	  return array;
+	  return arrayClone;
 
 	} //end of shuffle
 
@@ -49,22 +49,17 @@ $(document).ready(function() {
 		var content = document.getElementById('project-template').content;
 
 		for (var i = 0; i < array.length; i++) {
-			
-			var image = array[i].image;
-			var isCenterFocus = array[i].centerfocus;
-			var title = array[i].title;
-			var description = array[i].description;
-			var link = array[i].link;
 
 			//clone template
 			var clonedTemplate = content.cloneNode(true);
 
 			//populate template
-			$(clonedTemplate).find('img').attr('src', image);
-			$(clonedTemplate).find('a').attr('href', link);
-			clonedTemplate.querySelector('h5').textContent = title;
-			clonedTemplate.querySelector('p').textContent = description;
-			if(isCenterFocus){
+			$(clonedTemplate).find('.project-img').attr('id', array[i].id);
+			$(clonedTemplate).find('img').attr('src', array[i].image);
+			$(clonedTemplate).find('a').attr('href', array[i].link);
+			clonedTemplate.querySelector('h5').textContent = array[i].title;
+			clonedTemplate.querySelector('p').textContent = array[i].description;
+			if(array[i].centerfocus){
 				$(clonedTemplate).find('img').addClass('center-focus');
 			}
 
@@ -74,38 +69,46 @@ $(document).ready(function() {
 
 	} //end of populate
 
+	function loadProject(project){
 
-// Smooth Scrolling
+		var content = document.getElementById('project-page-template').content;
 
-	// var navHeight = document.getElementById('nav-bar').offsetHeight;
+		//clone template
+		var clonedTemplate = content.cloneNode(true);
 
-	// $(".portfolio-web-btn").click(function() {
-	//     $("html, body").animate({
-	//         scrollTop: $("#portfolio-web").offset().top-navHeight},
-	//         'slow');
-	// });
+		//console.log(project);
+		console.log(project.id);
+		var title, image, description;
 
-	// $(".portfolio-3d-btn").click(function() {
-	//     $("html, body").animate({
-	//         scrollTop: $("#portfolio-3d").offset().top-navHeight},
-	//         'slow');
-	// });
+		//find project by id
+		$.each(jsonArray, function(i, element){
+			if(element.id == project.id){
+				title = element.title;
+				image = element.image;
+				description = element.description;
+				link = element.link;
+				return false;
+			}
+		});
 
-	// $(".contact-btn").click(function() {
-	//     $("html, body").animate({
-	//         scrollTop: $("#contact").offset().top-navHeight},
-	//         'slow');
-	// });
+		//save state
+		window.history.pushState($('#portfolio').html(), null, null);
+		//reset html
+		$('#portfolio').html("");
 
-	// $("#form-submit-btn").click(function() {
-	// 	$('#form').attr('action',
- //                       'mailto:fepmarchi@gmail.com?subject=' +
- //                       $('#form-subject').val() + '&body=' +
- //                       $('#form-message').val() + '\n' + $('#form-name'));
- //        $('#form').submit();
-	// 	alert("Obrigado!");
-	// });
+		clonedTemplate.querySelector('h5').textContent = title;
+		$(clonedTemplate).find('img').attr('src', image);
+		clonedTemplate.querySelector('p').textContent = description;
 
+		//insert clone into portfolio
+		document.getElementById('portfolio').appendChild(clonedTemplate);
+
+	}
+
+	$(document).on('click', '.project-img', function(){
+		//console.log(this);
+		loadProject(this);
+	});
 
 }); //end of $(document).ready();
 
