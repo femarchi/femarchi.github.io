@@ -5,7 +5,8 @@
 		"image":"../imgs/web/camel-tribute-page.jpg",
 		"centerfocus":false,
 		"title":"CAMEL",
-		"description":"Primeiro desafio do curso Desenvolvedor Front-End do freecodecamp.com: um tributo à banda Camel.",
+		"brief":"Primeiro desafio do curso Desenvolvedor Front-End do freecodecamp.com: um tributo à banda Camel.",
+		"description":"Este projeto foi a primeira experiência com html e css, não possuindo nenhuma funcionalidade a nível de script.",
 		"category":"web",
 		"link":"http://codepen.io/femarchi/full/OXaZpq/"		
 		},
@@ -14,6 +15,7 @@
 		"image":"../imgs/web/random-quote-page.jpg",
 		"centerfocus":true,
 		"title":"GERADOR DE CITAÇÕES",
+		"brief":"Página criada para o curso de Desenvolvedor Front-End da página FreeCodeCamp.",
 		"description":"Página criada para o curso de Desenvolvedor Front-End da página FreeCodeCamp.",
 		"category":"web",
 		"link":"https://codepen.io/femarchi/full/QKVgqV/"		
@@ -23,6 +25,7 @@
 		"image":"../imgs/web/simple-weather-page.jpg",
 		"centerfocus":false,
 		"title":"APLICATIVO SIMPLES DE CLIMA E TEMPO",
+		"brief":"Página criada para o curso de Desenvolvedor Front-End da página FreeCodeCamp.",
 		"description":"Página criada para o curso de Desenvolvedor Front-End da página FreeCodeCamp.",
 		"category":"web",
 		"link":"https://codepen.io/femarchi/full/jrdRJv/"		
@@ -32,6 +35,7 @@
 		"image":"../imgs/3d/Banco_Auto/03.jpg",
 		"centerfocus":true,
 		"title":"BANCO AUTOMOTIVO",
+		"brief":"Modelagem, texturização e render.",
 		"description":"Modelagem, texturização e render.",
 		"category":"3d",
 		"link":"#"		
@@ -41,6 +45,7 @@
 		"image":"../imgs/3d/Patio_Gale/PatioGale03.jpg",
 		"centerfocus":false,
 		"title":"PÁTIO GALÉ - PORTUGAL",
+		"brief":"Modelagem e texturização para representação de projeto cenográfico.",
 		"description":"Modelagem e texturização para representação de projeto cenográfico.",
 		"category":"3d",
 		"link":"#"		
@@ -50,6 +55,7 @@
 		"image":"../imgs/3d/Centopeia/Centopeia02a.jpg",
 		"centerfocus":true,
 		"title":"CENTOPÉIA DE BRINQUEDO",
+		"brief":"Modelagem e renderização de produto promocional.",
 		"description":"Modelagem e renderização de produto promocional.",
 		"category":"3d",
 		"link":"#"		
@@ -59,6 +65,7 @@
 		"image":"../imgs/design/TCC/SS05.jpg",
 		"centerfocus":true,
 		"title":"SECADOR SOLAR",
+		"brief":"Projeto de conclusão de curso para a obtenção do grau de Designer de Produto.",
 		"description":"Projeto de conclusão de curso para a obtenção do grau de Designer de Produto.",
 		"category":"Product Design",
 		"link":"#"		
@@ -68,6 +75,7 @@
 		"image":"../imgs/3d/Azeite_Andorinha/Andorinha02.jpg",
 		"centerfocus":true,
 		"title":"AZEITE ANDORINHA",
+		"brief":"Representação 3d de embalagem para lançamento do produto.",
 		"description":"Representação 3d de embalagem para lançamento do produto.",
 		"category":"3d",
 		"link":"#"		
@@ -77,6 +85,7 @@
 		"image":"../imgs/3d/Predio/PredioRendr.jpg",
 		"centerfocus":true,
 		"title":"PRÉDIO RESIDENCIAL",
+		"brief":"Representação 3d e planta ilustrada para apresentação de projeto.",
 		"description":"Representação 3d e planta ilustrada para apresentação de projeto.",
 		"category":"3d",
 		"link":"#"		
@@ -86,6 +95,7 @@
 		"image":"../imgs/3d/Roda_Gigante/03.jpg",
 		"centerfocus":true,
 		"title":"RODA GIGANTE",
+		"brief":"Modelagem para uso em projeto de cenografia.",
 		"description":"Modelagem para uso em projeto de cenografia.",
 		"category":"3d",
 		"link":"#"		
@@ -95,6 +105,7 @@
 		"image":"../imgs/3d/Sala_Comercial/SalaComercial03.jpg",
 		"centerfocus":true,
 		"title":"SALA COMERCIAL",
+		"brief":"Representação em 3d de projeto arquitetônico.",
 		"description":"Representação em 3d de projeto arquitetônico.",
 		"category":"3d",
 		"link":"#"		
@@ -104,6 +115,7 @@
 		"image":"../imgs/3d/Stand_Iveco/StandIveco05.jpg",
 		"centerfocus":true,
 		"title":"STAND IVECO",
+		"brief":"Representação em 3d de projeto cenográfico.",
 		"description":"Representação em 3d de projeto cenográfico.",
 		"category":"3d",
 		"link":"#"		
